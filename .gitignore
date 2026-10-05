@@ -10,3 +10,20 @@ tools/cutout
 
 # OS
 .DS_Store
+
+# Kept locally, not published: earlier drafts, backups, internal notes and build tools
+version-a/
+version-b/
+version-c/
+version-d/
+version-e/
+version-h/
+_archive/
+tools/
+README-internal.md
+assets/meatxpert-logo.png
+assets/meatxpert-logo-white.png
+assets/brand/meatxpert-logo-white.png
+assets/cutouts/picanha.webp
+assets/media/shop-interior.jpg
+assets/media/shopfront.jpg
