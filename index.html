@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MEATXPERT — choose a website design</title>
+<meta name="description" content="Website designs for MEATXPERT: option 1, Market Hall, and option 2, Storefront.">
+<link rel="icon" href="assets/brand/meatxpert-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#C0262B; --red-deep:#971D22; --ink:#171310; --ink-2:#5C544D; --ink-3:#8B827A;
+    --line:#E7E3DD; --soft:#F7F4F0; --r:12px;
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+  body{ margin:0; background:var(--soft); color:var(--ink); font-family:"Nunito",Arial,sans-serif;
+    font-size:16.5px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  img{ display:block; max-width:100%; height:auto; }
+  a{ color:inherit; }
+  :focus-visible{ outline:3px solid var(--red); outline-offset:3px; }
+
+  .wrap{ width:100%; max-width:1240px; margin-inline:auto; padding:clamp(28px,5vw,64px) clamp(16px,4vw,44px) 48px; }
+  header{ display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:18px 40px;
+    padding-bottom:clamp(22px,3vw,34px); margin-bottom:clamp(24px,3.4vw,40px); border-bottom:1px solid var(--line); }
+  .logo{ width:190px; }
+  .eyebrow{ font-family:"Anton",Impact,sans-serif; text-transform:uppercase; letter-spacing:.16em; font-size:13px; color:var(--red); }
+  h1{ font-family:"Poppins",Arial,sans-serif; font-weight:700; letter-spacing:-.015em; line-height:1.1;
+    font-size:clamp(28px,3.6vw,44px); margin:8px 0 0; }
+
+  .options{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(18px,2.4vw,32px); }
+  @media (max-width:880px){ .options{ grid-template-columns:1fr; } }
+
+  .opt{ position:relative; display:flex; flex-direction:column; background:#fff; border:1.5px solid var(--line);
+    border-radius:var(--r); overflow:hidden; transition:border-color .18s ease, box-shadow .18s ease; }
+  .opt:hover{ border-color:var(--red); box-shadow:0 18px 40px rgba(23,19,16,.08); }
+  .shot{ display:block; aspect-ratio:16 / 10; overflow:hidden; background:var(--soft); border-bottom:1px solid var(--line); }
+  .shot img{ width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .5s ease; }
+  .opt:hover .shot img{ transform:scale(1.02); }
+  @media (prefers-reduced-motion:reduce){ .opt:hover .shot img{ transform:none; } }
+
+  .body{ display:flex; flex-direction:column; flex:1; padding:clamp(20px,2.4vw,30px); }
+  .letter{ display:inline-grid; place-items:center; width:44px; height:44px; border-radius:50%;
+    background:var(--red); color:#fff; font-family:"Anton",Impact,sans-serif; font-size:22px; line-height:1; }
+  .title{ display:flex; align-items:center; gap:14px; }
+  h2{ font-family:"Poppins",Arial,sans-serif; font-weight:700; font-size:clamp(22px,2.2vw,28px); line-height:1.15; margin:0; }
+  h2 a{ text-decoration:none; }
+  h2 a::after{ content:""; position:absolute; inset:0 0 auto; aspect-ratio:16 / 10; }   /* the screenshot opens the homepage */
+  .sub{ display:block; font-family:"Nunito",Arial,sans-serif; font-weight:700; font-size:14px; color:var(--ink-3); letter-spacing:0; }
+  .desc{ margin:14px 0 0; color:var(--ink-2); }
+  .points{ list-style:none; margin:14px 0 0; padding:0; display:grid; gap:6px; font-size:14.5px; font-weight:700; }
+  .points li{ display:flex; gap:10px; }
+  .points li::before{ content:""; flex:none; width:7px; height:7px; margin-top:.6em; border-radius:50%; background:var(--red); }
+
+  .pages{ margin-top:auto; padding-top:22px; }
+  .pages p{ margin:0 0 10px; font-size:12px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); }
+  .pages ul{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:8px; }
+  .pages a{ display:inline-flex; align-items:center; position:relative; z-index:1; padding:9px 16px; border-radius:8px;
+    border:1.5px solid var(--line); font-size:14px; font-weight:800; text-decoration:none; background:#fff;
+    transition:border-color .16s ease, background-color .16s ease, color .16s ease; }
+  .pages a:hover{ border-color:var(--ink); }
+  .pages a.main{ background:var(--red); border-color:var(--red); color:#fff; }
+  .pages a.main:hover{ background:var(--red-deep); border-color:var(--red-deep); }
+
+  .note{ margin:clamp(28px,3.4vw,40px) 0 0; padding:16px 20px; border-radius:var(--r); background:#fff; border:1px solid var(--line);
+    font-size:14px; color:var(--ink-2); font-weight:600; }
+  .note strong{ color:var(--ink); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div>
+      <p class="eyebrow">Website design &middot; October 2026</p>
+      <h1>Choose your MEATXPERT website</h1>
+    </div>
+    <img class="logo" src="assets/brand/meatxpert-logo.png" width="1200" height="557" alt="MEATXPERT — Premium Cut, Premium Meat">
+  </header>
+
+  <div class="options">
+
+    <article class="opt">
+      <a class="shot" href="version-g/index.html" tabindex="-1" aria-hidden="true"><img src="assets/previews/version-g.jpg" width="1440" height="900" alt=""></a>
+      <div class="body">
+        <div class="title">
+          <span class="letter" aria-hidden="true">1</span>
+          <h2><a href="version-g/index.html">Option 1 <span class="sub">Market Hall</span></a></h2>
+        </div>
+        <p class="desc">A busy, well-stocked counter. The whole range is on screen at once, with filters down the side so customers can narrow 41 cuts down to the one they want.</p>
+        <ul class="points">
+          <li>Hero slider beside four promotion tiles</li>
+          <li>Shop by category, then filter by use and price</li>
+          <li>Best for customers who know what they want to buy</li>
+        </ul>
+        <nav class="pages" aria-label="Option 1 pages">
+          <p>Open a page</p>
+          <ul>
+            <li><a class="main" href="version-g/index.html">Homepage</a></li>
+            <li><a href="version-g/product.html?p=tomahawk">Product</a></li>
+            <li><a href="version-g/cart.html">Cart</a></li>
+            <li><a href="version-g/checkout.html">Checkout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </article>
+
+    <article class="opt">
+      <a class="shot" href="version-f/index.html" tabindex="-1" aria-hidden="true"><img src="assets/previews/version-f.jpg" width="1440" height="900" alt=""></a>
+      <div class="body">
+        <div class="title">
+          <span class="letter" aria-hidden="true">2</span>
+          <h2><a href="version-f/index.html">Option 2 <span class="sub">Storefront</span></a></h2>
+        </div>
+        <p class="desc">A calmer, more spacious shop window. A full-width slider leads into a scrolling row of products, with more room given to each photograph and each story.</p>
+        <ul class="points">
+          <li>Full-width hero slider and large promotion tiles</li>
+          <li>Products in a scrolling row, sorted by category tabs</li>
+          <li>Best for customers browsing for ideas</li>
+        </ul>
+        <nav class="pages" aria-label="Option 2 pages">
+          <p>Open a page</p>
+          <ul>
+            <li><a class="main" href="version-f/index.html">Homepage</a></li>
+            <li><a href="version-f/product.html?p=tomahawk">Product</a></li>
+            <li><a href="version-f/cart.html">Cart</a></li>
+            <li><a href="version-f/checkout.html">Checkout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </article>
+
+  </div>
+
+  <p class="note"><strong>Please note:</strong> prices, pack sizes, delivery rates and the deal of the week are examples for the layout and still need your price list. The cart and checkout work for the demonstration, but no order is sent and no payment is taken. The cart page is empty until you add something from the shop.</p>
+</main>
+</body>
+</html>

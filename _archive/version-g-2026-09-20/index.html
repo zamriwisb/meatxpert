@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MEATXPERT — Premium Cut, Premium Meat. Your Malaysian butcher.</title>
+<meta name="description" content="Premium beef cut to order by a Malaysian butcher — rib eye, striploin, rump, silver side and wagyu, delivered frozen across Malaysia. Shop the whole counter by meat code.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="shell topbar-in">
+    <p>Free delivery over RM&nbsp;350</p>
+    <p class="topbar-mid">Cut to order every morning &middot; Same-day in the Klang Valley</p>
+    <p><a href="tel:+60312345678">+60 3 1234 5678</a></p>
+  </div>
+</div>
+
+<header class="head">
+  <div class="shell head-in">
+    <a class="mark" href="#main" aria-label="MEATXPERT, home"><img class="mark-img" src="../assets/meatxpert-logo.png" width="1000" height="467" alt=""></a>
+
+    <form class="search" role="search" data-search>
+      <label class="sr" for="q">Search cuts or meat code</label>
+      <input id="q" type="search" placeholder="Search a cut, or a code like 45">
+      <button type="submit" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 L21 21"/></svg>
+      </button>
+    </form>
+
+    <div class="tools">
+      <button class="tool" data-wish-open aria-label="Saved cuts">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.6-7-9.3A4.2 4.2 0 0 1 12 7.6a4.2 4.2 0 0 1 7 3.1C19 15.4 12 20 12 20Z"/></svg>
+        <span class="pip" data-wish-count>0</span>
+      </button>
+
+      <button class="tool tool-cart" data-cart-open aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16l-1.4 11.2a2 2 0 0 1-2 1.8H7.4a2 2 0 0 1-2-1.8Z"/><path d="M8.5 7V5.8a3.5 3.5 0 0 1 7 0V7"/></svg>
+        <span class="pip" data-cart-count>0</span>
+        <span class="tool-total" data-cart-mini>RM 0.00</span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="shell nav-in">
+      <a href="#shop">All cuts</a>
+      <a href="#codes">Shop by code</a>
+      <a href="#steps">How it works</a>
+      <a href="#deal">Deal of the week</a>
+      <a href="#assurance">Halal &amp; delivery</a>
+      <a href="#news">Learn</a>
+      <a class="nav-end" href="#deal">This week: RM&nbsp;67 off the BBQ box</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO PANEL + PROMO BLOCK ============ -->
+  <section class="top">
+    <div class="shell top-in">
+
+      <div class="hero" aria-roledescription="carousel" aria-label="This week at the counter">
+        <div class="slides" data-slides>
+
+          <article class="slide slide-cream is-on" data-slide>
+            <div class="slide-in">
+              <div class="slide-copy">
+                <p class="eyebrow">Cut of the week</p>
+                <h1 class="slide-h">Rib eye, cut this morning</h1>
+                <p class="slide-p">Code 12. Grain-fed, evenly marbled, cut thick enough to rest properly before you touch it.</p>
+                <a class="btn btn-red" href="#shop">Shop rib eye</a>
+              </div>
+              <div class="slide-vis"><div class="cutout" data-cut="ribeye" data-marb="9"></div></div>
+            </div>
+          </article>
+
+          <article class="slide slide-dark" data-slide hidden>
+            <div class="slide-in">
+              <div class="slide-copy">
+                <p class="eyebrow">Wagyu just landed</p>
+                <h1 class="slide-h">MB7, and not much of it</h1>
+                <p class="slide-p">Australian wagyu rib eye and rump cubes, in limited weight. When this batch is gone it is gone.</p>
+                <a class="btn btn-white" href="#shop">See the wagyu</a>
+              </div>
+              <div class="slide-vis"><div class="cutout" data-cut="ribeye" data-marb="12"></div></div>
+            </div>
+          </article>
+
+          <article class="slide slide-red" data-slide hidden>
+            <div class="slide-in">
+              <div class="slide-copy">
+                <p class="eyebrow">Steamboat season</p>
+                <h1 class="slide-h">Sliced 1.5 mm, ready for the pot</h1>
+                <p class="slide-p">Shabu slices, wagyu cubes, beef balls and a bag of bones for the stock. Sets built for six.</p>
+                <a class="btn btn-white" href="#shop">Shop steamboat</a>
+              </div>
+              <div class="slide-vis"><div class="cutout" data-cut="striploin" data-marb="7"></div></div>
+            </div>
+          </article>
+
+        </div>
+
+        <button class="arrow arrow-prev" data-slide-prev aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 L8 12 L15 19"/></svg>
+        </button>
+        <button class="arrow arrow-next" data-slide-next aria-label="Next slide">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5 L16 12 L9 19"/></svg>
+        </button>
+        <div class="dots" data-slide-dots role="tablist" aria-label="Choose a slide"></div>
+      </div>
+
+      <div class="promo-block">
+        <a class="promo promo-wheat" href="#deal">
+          <div class="promo-vis"><div class="cutout" data-cut="shortrib" data-marb="7"></div></div>
+          <p class="eyebrow">Feeds eight</p>
+          <h2 class="promo-h">Open House BBQ Box</h2>
+          <span class="promo-link">View the box</span>
+        </a>
+        <a class="promo promo-dark" href="#steps">
+          <p class="eyebrow">Never thawed</p>
+          <h2 class="promo-h">Packed in dry ice</h2>
+          <span class="promo-link">How we pack</span>
+        </a>
+        <a class="promo promo-red" href="#assurance">
+          <p class="eyebrow">Halal certified</p>
+          <h2 class="promo-h">Certificate in every box</h2>
+          <span class="promo-link">How we handle it</span>
+        </a>
+        <a class="promo promo-soft" href="#shop">
+          <p class="eyebrow">Under RM 100</p>
+          <h2 class="promo-h">Six cuts for a weeknight</h2>
+          <span class="promo-link">Shop the value shelf</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="strip">
+    <div class="shell strip-in">
+      <div class="strip-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 L20 6.2 V12 c0 5-3.4 8-8 9.3 C7.4 20 4 17 4 12 V6.2 Z"/><path d="M8.6 12.2 L11 14.6 L15.6 10"/></svg>
+        <div><strong>Halal certified</strong><span>Certificate in every box</span></div>
+      </div>
+      <div class="strip-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 v18"/><path d="M3.4 7.5 L20.6 16.5"/><path d="M20.6 7.5 L3.4 16.5"/></svg>
+        <div><strong>Blast frozen at &minus;18&deg;C</strong><span>Never thawed in transit</span></div>
+      </div>
+      <div class="strip-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg>
+        <div><strong>Free delivery over RM 350</strong><span>Same day in the Klang Valley</span></div>
+      </div>
+      <div class="strip-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2 v5 l3.2 2"/></svg>
+        <div><strong>Cut to order</strong><span>Broken down the morning it ships</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SHOP BY MEAT CODE ============ -->
+  <section class="codes" id="codes">
+    <div class="shell">
+      <div class="codes-head">
+        <div>
+          <p class="eyebrow">The butcher's numbering</p>
+          <h2 class="sec-h">Shop by meat code</h2>
+        </div>
+        <p class="codes-note">Every cut on our bench carries a number. Order by the number and you always get the same cut, the same thickness, every time.</p>
+      </div>
+      <div class="code-row" data-codes role="group" aria-label="Filter the counter by meat code"></div>
+    </div>
+  </section>
+
+  <!-- ============ THE COUNTER ============ -->
+  <section class="shop" id="shop">
+    <div class="shell shop-in">
+
+      <aside class="filters" aria-label="Filter cuts">
+        <div class="filter-head">
+          <h2 class="filter-h">Filter</h2>
+          <button class="filter-clear" data-clear type="button">Clear all</button>
+        </div>
+
+        <div class="filter-set" role="group" aria-label="Category">
+          <h3>Category</h3>
+          <button class="fbtn is-on" data-cat="all" type="button" aria-pressed="true">All cuts <em data-count-all>12</em></button>
+          <button class="fbtn" data-cat="steak" type="button" aria-pressed="false">Steak cuts <em>4</em></button>
+          <button class="fbtn" data-cat="slow" type="button" aria-pressed="false">Slow cook <em>3</em></button>
+          <button class="fbtn" data-cat="wagyu" type="button" aria-pressed="false">Wagyu <em>2</em></button>
+          <button class="fbtn" data-cat="bbq" type="button" aria-pressed="false">Shabu &amp; BBQ <em>3</em></button>
+        </div>
+
+        <div class="filter-set" role="group" aria-label="Best for">
+          <h3>Best for</h3>
+          <button class="fbtn" data-use="pan" type="button" aria-pressed="false">Pan and rest</button>
+          <button class="fbtn" data-use="grill" type="button" aria-pressed="false">Grill and BBQ</button>
+          <button class="fbtn" data-use="slow" type="button" aria-pressed="false">Slow cook and braise</button>
+          <button class="fbtn" data-use="steamboat" type="button" aria-pressed="false">Steamboat and shabu</button>
+        </div>
+
+        <div class="filter-set" role="group" aria-label="Price">
+          <h3>Price</h3>
+          <button class="fbtn" data-price="lo" type="button" aria-pressed="false">Under RM 100</button>
+          <button class="fbtn" data-price="mid" type="button" aria-pressed="false">RM 100 &ndash; RM 180</button>
+          <button class="fbtn" data-price="hi" type="button" aria-pressed="false">RM 180 and above</button>
+        </div>
+
+        <div class="filter-aside">
+          <p class="eyebrow">Not sure which</p>
+          <p>Tell us what you are cooking and we will pick the cut. Message the counter on <a href="tel:+60312345678">+60 3 1234 5678</a>.</p>
+        </div>
+      </aside>
+
+      <div class="results">
+        <div class="results-bar">
+          <div>
+            <h2 class="sec-h sec-h-left">The counter</h2>
+            <p class="results-count"><strong data-shown>12</strong> of 12 cuts &middot; <span data-active-label>everything on the bench</span></p>
+          </div>
+          <label class="sort">
+            <span class="sr">Sort cuts by</span>
+            <select data-sort>
+              <option value="featured">Featured first</option>
+              <option value="price-asc">Price, low to high</option>
+              <option value="price-desc">Price, high to low</option>
+              <option value="code">Meat code</option>
+              <option value="rating">Best rated</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="grid" data-grid>
+
+          <article class="card" data-cat="steak" data-use="pan grill" data-price-band="mid" data-code="12" data-id="ribeye" data-name="Rib Eye" data-price="168" data-unit="350g" data-rating="4.5" data-group="Steak cuts">
+            <div class="card-vis"><div class="cutout" data-cut="ribeye" data-marb="9"></div><span class="chip">12</span></div>
+            <p class="card-cat">Steak cuts</p>
+            <h3 class="card-h">Rib Eye</h3>
+            <p class="card-pr">RM&nbsp;168 <span>350 g</span></p>
+            <button class="btn btn-dark btn-sm" data-add>Add to cart</button>
+          </article>
+
+          <article class="card" data-cat="steak" data-use="pan" data-price-band="mid" data-code="13" data-id="striploin" data-name="Striploin" data-price="145" data-unit="300g" data-rating="4.5" data-group="Steak cuts">
+            <div class="card-vis"><div class="cutout" data-cut="striploin" data-marb="7"></div><span class="chip">13</span></div>
+            <p class="card-cat">Steak cuts</p>
+            <h3 class="card-h">Striploin</h3>
+            <p class="card-pr">RM&nbsp;145 <span>300 g</span></p>
+            <button class="btn btn-dark btn-sm" data-add>Add to cart</button>
+          </article>
+
+          <article class="card" data-cat="steak" data-use="pan" data-price-band="hi" data-code="14" data-id="tenderloin" data-name="Tenderloin" data-price="198" data-unit="250g" data-rating="5" data-group="Steak cuts">
+            <div class="card-vis"><div class="cutout" data-cut="tenderloin" data-marb="5"></div><span class="chip">14</span></div>
+            <p class="card-cat">Steak cuts</p>
+            <h3 class="card-h">Tenderloin</h3>
+            <p class="card-pr">RM&nbsp;198 <span>250 g</span></p>
+            <button class="btn btn-dark btn-sm" data-add>Add to cart</button>
+          </article>
+
+          <article class="card" data-cat="steak" data-use="pan grill" data-price-band="lo" data-code="45" data-id="rump" data-name="Rump Steak" data-price="88" data-unit="350g" data-rating="5" data-group="Steak cuts">
+            <div class="card-vis"><div class="cutout" data-cut="rump" data-marb="5"></div><span class="chip">45</span></div>
+            <p class="card-cat">Steak cuts</p>
+            <h3 class="card-h">Rump Steak</h3>
+            <p class="card-pr">RM&nbsp;88 <span>350 g</span></p>
+            <button class="btn btn-dark btn-sm" data-add>Add to cart</button>
+          </article>
+
+          <article class="card" data-cat="slow" data-use="slow" data-price-band="lo" data-code="44" data-id="silverside" data-name="Silver Side" data-price="72" data-unit="700g" data-rating="4" data-group="Slow cook">
+            <div class="card-vis"><div class="cutout" data-cut="rump" data-marb="5" data-flip></div><span class="chip">44</span></div>
+            <p class="card-cat">Slow cook</p>
+            <h3 class="card-h">Silver Side</h3>
+            <p class="card-pr">RM&nbsp;72 <span>700 g</span></p>
+            <button class="btn btn-dark btn-sm" data-add>Add to cart</button>
+          </article>
+
+          <article class="card" data-cat="slow" data-use="slow grill" data-price-band="lo" data-code="32" data-id="shortribs" data-name="Short Ribs, Bone In" data-price="96" data-unit="800g" data-rating="5" data-group="Slow cook">
+            <div class="card-vis"><div class="cutout" data-cut="shortrib" data-marb="7"></div><span class="chip">32</span></div>
+            <p class="card-cat">Slow cook</p>
+            <h3 class="card-h">Short Ribs, Bone In</h3>
+            <p class="card-pr">RM&nbsp;96 <span>800 g</span></p>
+            <button class="btn btn-dark btn-sm" data-add>Add to cart</button>
+          </article>
+
+          <article class="card" data-cat="slow" data-use="slow" data-price-band="lo" data-code="30" data-id="brisket" data-name="Brisket" data-price="84" data-unit="1kg" data-rating="4.5" data-group="Slow cook">
+            <div class="card-vis"><div class="cutout" data-cut="striploin" data-marb="5" data-flip></div><span class="chip">30</span></div>
+            <p class="card-cat">Slow cook</p>
+            <h3 class="card-h">Brisket</h3>
+            <p class="card-pr">RM&nbsp;84 <span>1 kg</span></p>
+            <button class="btn btn-dark btn-sm" data-add>Add to cart</button>
+          </article>
+
+          <article class="card" data-cat="wagyu" data-use="pan" data-price-band="hi" data-code="12W" data-id="wagyu-rib" data-name="Wagyu Rib Eye MB7" data-price="248" data-unit="350g" data-rating="5" data-group="Wagyu">
+            <div class="card-vis"><div class="cutout" data-cut="ribeye" data-marb="12"></div><span class="chip">12W</span></div>
+            <p class="card-cat">Wagyu</p>
+            <h3 class="card-h">Wagyu Rib Eye MB7</h3>
+            <p class="card-pr">RM&nbsp;248 <span>350 g</span></p>
+            <button class="btn btn-dark btn-sm" data-add>Add to cart</button>
+          </article>
+
+          <article class="card" data-cat="wagyu" data-use="steamboat slow" data-price-band="mid" data-code="25" data-id="wagyu-cubes" data-name="Wagyu Beef Cubes MB6" data-price="145" data-unit="500g" data-rating="4.5" data-group="Wagyu">
+            <div class="card-vis"><div class="cutout" data-cut="cube" data-marb="9"></div><span class="chip">25</span></div>
+            <p class="card-cat">Wagyu</p>
+            <h3 class="card-h">Wagyu Beef Cubes MB6</h3>
+            <p class="card-pr">RM&nbsp;145 <span>500 g</span></p>
+            <button class="btn btn-dark btn-sm" data-add>Add to cart</button>
+          </article>
+
+          <article class="card" data-cat="bbq" data-use="steamboat" data-price-band="lo" data-code="21" data-id="shabu" data-name="Chuck Roll Shabu Slices" data-price="78" data-unit="500g" data-rating="4.5" data-group="Shabu &amp; BBQ">
+            <div class="card-vis"><div class="cutout" data-cut="striploin" data-marb="7"></div><span class="chip">21</span></div>
+            <p class="card-cat">Shabu &amp; BBQ</p>
+            <h3 class="card-h">Chuck Roll Shabu Slices</h3>
+            <p class="card-pr">RM&nbsp;78 <span>500 g</span></p>
+            <button class="btn btn-dark btn-sm" data-add>Add to cart</button>
+          </article>
+
+          <article class="card" data-cat="bbq" data-use="grill" data-price-band="lo" data-code="26" data-id="patties" data-name="Wagyu Burger Patties" data-price="96" data-unit="4 x 150g" data-rating="4" data-group="Shabu &amp; BBQ">
+            <div class="card-vis"><div class="cutout" data-cut="cube" data-marb="7"></div><span class="chip">26</span></div>
+            <p class="card-cat">Shabu &amp; BBQ</p>
+            <h3 class="card-h">Wagyu Burger Patties</h3>
+            <p class="card-pr">RM&nbsp;96 <span>4 &times; 150 g</span></p>
+            <button class="btn btn-dark btn-sm" data-add>Add to cart</button>
+          </article>
+
+          <article class="card" data-cat="bbq" data-use="grill" data-price-band="mid" data-code="33" data-id="karubi" data-name="Karubi Yakiniku Set" data-price="128" data-unit="400g" data-rating="5" data-group="Shabu &amp; BBQ">
+            <div class="card-vis"><div class="cutout" data-cut="shortrib" data-marb="9" data-flip></div><span class="chip">33</span></div>
+            <p class="card-cat">Shabu &amp; BBQ</p>
+            <h3 class="card-h">Karubi Yakiniku Set</h3>
+            <p class="card-pr">RM&nbsp;128 <span>400 g</span></p>
+            <button class="btn btn-dark btn-sm" data-add>Add to cart</button>
+          </article>
+
+        </div>
+
+        <p class="grid-empty" data-grid-empty hidden>Nothing on the bench matches that. Clear the filters, or try a code like 45.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEAL OF THE WEEK ============ -->
+  <section class="deal" id="deal">
+    <div class="shell deal-in">
+      <div class="deal-copy">
+        <p class="eyebrow">Deal of the week</p>
+        <h2 class="deal-h">Open House BBQ Box</h2>
+        <p class="deal-p">Rump steak, short ribs, four wagyu patties and a kilo of beef sausages. Feeds eight people and a long afternoon.</p>
+        <p class="deal-pr">RM&nbsp;365 <s>RM&nbsp;432</s></p>
+        <div class="deal-act" data-id="bbq-box" data-name="Open House BBQ Box" data-price="365" data-unit="3kg total">
+          <button class="btn btn-white" data-add>Add the box</button>
+          <p class="deal-fine">Resets every Sunday at midnight.</p>
+        </div>
+      </div>
+      <div class="deal-side">
+        <div class="deal-vis"><div class="cutout" data-cut="shortrib" data-marb="7"></div></div>
+        <div class="clock" data-clock role="timer" aria-label="Time left on this week's deal">
+          <div><strong data-clock-d>00</strong><span>days</span></div>
+          <div><strong data-clock-h>00</strong><span>hours</span></div>
+          <div><strong data-clock-m>00</strong><span>minutes</span></div>
+          <div><strong data-clock-s>00</strong><span>seconds</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="steps" id="steps">
+    <div class="shell">
+      <div class="sec-head">
+        <p class="eyebrow eyebrow-c">From our bench to your chiller</p>
+        <h2 class="sec-h">How your order reaches you</h2>
+      </div>
+      <ol class="step-row">
+        <li class="step">
+          <h3 class="step-h">Cut to order</h3>
+          <p>A butcher breaks down the primal the morning your box leaves. Ask for it thicker and it goes on the same bench.</p>
+        </li>
+        <li class="step">
+          <h3 class="step-h">Blast frozen</h3>
+          <p>Straight to &minus;18&deg;C while it is still fresh, so the cells never get a chance to collapse.</p>
+        </li>
+        <li class="step">
+          <h3 class="step-h">Delivered cold</h3>
+          <p>Packed in dry ice with a temperature strip you can read on arrival. Same day in the Klang Valley.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ HALAL ============ -->
+  <section class="assure" id="assurance">
+    <div class="shell assure-in">
+      <div>
+        <p class="eyebrow">Why families order here</p>
+        <h2 class="sec-h sec-h-left">Halal handling, kept separate end to end</h2>
+        <p class="assure-p">Every cut is slaughtered and handled under certification recognised by JAKIM. Separate chiller, separate bench, separate knives, separate team. Each box ships with its certificate and the batch number of the animal your cut came from.</p>
+      </div>
+      <dl class="assure-facts">
+        <div><dt>Storage</dt><dd>&minus;18&deg;C, own chiller</dd></div>
+        <div><dt>Certificate</dt><dd>In every box</dd></div>
+        <div><dt>Traceability</dt><dd>Batch number per cut</dd></div>
+        <div><dt>Audit</dt><dd>Twice yearly, third party</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ LEARN ============ -->
+  <section class="news" id="news">
+    <div class="shell">
+      <div class="sec-head">
+        <p class="eyebrow eyebrow-c">From the counter</p>
+        <h2 class="sec-h">Learn your cuts</h2>
+      </div>
+      <div class="news-row">
+        <article class="post">
+          <p class="post-meta"><span>Handling</span> 18 September 2026</p>
+          <h3 class="post-h">How to thaw it properly</h3>
+          <p>Move the meat to the chiller 24 hours before you cook. It thaws slowly and comes back to a texture close to the day it was cut. Never use hot water or a microwave &mdash; both cook the edges and wreck the cells.</p>
+          <a class="post-link" href="#news">Read more</a>
+        </article>
+        <article class="post">
+          <p class="post-meta"><span>Kitchen</span> 11 September 2026</p>
+          <h3 class="post-h">The tools that actually matter</h3>
+          <p>A heavy pan that holds its heat, tongs instead of a fork, and a probe thermometer. That is the whole list. And resting the steak is not optional &mdash; five minutes, minimum.</p>
+          <a class="post-link" href="#news">Read more</a>
+        </article>
+        <article class="post">
+          <p class="post-meta"><span>Butchery</span> 4 September 2026</p>
+          <h3 class="post-h">What silver skin is</h3>
+          <p>The silver membrane on a tenderloin never breaks down, however long you cook it. A good butcher trims it off before it reaches you. If it is still on, slide a thin knife under it at an angle.</p>
+          <a class="post-link" href="#news">Read more</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="sign">
+    <div class="shell sign-in">
+      <div>
+        <h2 class="sign-h">RM&nbsp;30 off your first order</h2>
+        <p class="sign-p">One message a week: a new cut explained, what came in fresh, and the code to order it by. Join and we send a code for RM&nbsp;30 off any order over RM&nbsp;250.</p>
+      </div>
+      <form class="sign-form" data-signup>
+        <label class="sr" for="email-g">Email address</label>
+        <input id="email-g" type="email" name="email" placeholder="you@example.com" required>
+        <button class="btn btn-red" type="submit">Send my code</button>
+        <p class="sign-msg" data-signup-msg role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="shell foot-in">
+    <div class="foot-brand">
+      <img class="foot-logo" src="../assets/meatxpert-logo.png" width="1000" height="467"
+           alt="MEATXPERT — Malaysian butcher. Premium Cut, Premium Meat.">
+      <p>Malaysian butcher. Whole-primal butchery and premium beef import.<br>14 Jalan Kia Peng, 50450 Kuala Lumpur.</p>
+      <p class="foot-tel"><a href="tel:+60312345678">+60 3 1234 5678</a><br><a href="mailto:hello@meatxpert.my">hello@meatxpert.my</a></p>
+    </div>
+    <nav class="foot-col" aria-label="Shop">
+      <h3>Shop</h3>
+      <a href="#shop">Steak cuts</a>
+      <a href="#shop">Slow cook</a>
+      <a href="#shop">Wagyu</a>
+      <a href="#codes">Shop by code</a>
+      <a href="#deal">Deal of the week</a>
+    </nav>
+    <nav class="foot-col" aria-label="Learn">
+      <h3>Learn</h3>
+      <a href="#news">How to thaw</a>
+      <a href="#news">Tools that matter</a>
+      <a href="#news">Silver skin</a>
+      <a href="#codes">Meat code chart</a>
+    </nav>
+    <nav class="foot-col" aria-label="Help">
+      <h3>Help</h3>
+      <a href="#assurance">Halal handling</a>
+      <a href="#steps">Delivery &amp; packaging</a>
+      <a href="#shop">Returns</a>
+      <a href="tel:+60312345678">Contact</a>
+    </nav>
+  </div>
+  <div class="shell foot-base">
+    <p>&copy; 2026 MEATXPERT Sdn Bhd (1234567-A)</p>
+    <p>Prices in Malaysian Ringgit, inclusive of SST.</p>
+  </div>
+</footer>
+
+<!-- ============ CART ============ -->
+<div class="scrim" data-cart-scrim hidden></div>
+<aside class="cart" data-cart role="dialog" aria-modal="true" aria-label="Your cart" hidden>
+  <header class="cart-head">
+    <h2 data-drawer-title>Your cart</h2>
+    <button class="cart-x" data-cart-close aria-label="Close">&times;</button>
+  </header>
+  <div class="cart-ship" data-cart-ship-wrap>
+    <div class="cart-bar"><span data-cart-bar></span></div>
+    <p data-cart-ship>Free delivery over RM 350.</p>
+  </div>
+  <div class="cart-body" data-cart-body></div>
+  <footer class="cart-foot" data-cart-foot>
+    <div class="cart-sum">
+      <span>Subtotal</span>
+      <strong data-cart-total>RM 0.00</strong>
+    </div>
+    <button class="btn btn-red btn-full" data-checkout>Go to checkout</button>
+    <p class="cart-fine">Delivery and any dry-ice surcharge are calculated at checkout.</p>
+  </footer>
+</aside>
+
+<script src="app.js"></script>
+</body>
+</html>

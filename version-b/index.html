@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MEATXPERT — Premium wagyu &amp; dry-aged beef delivered across Malaysia</title>
+<meta name="description" content="Halal-certified Australian wagyu, Japanese A5 and 45-day dry-aged beef, cut to order in Kuala Lumpur and delivered frozen. Free delivery over RM 350.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="bar">
+  <div class="shell bar-in">
+    <p>Free delivery on orders over RM&nbsp;350 &mdash; Klang Valley delivered same day</p>
+    <p class="bar-alt">Cut to order every morning, 6am</p>
+  </div>
+</div>
+
+<header class="head">
+  <div class="shell head-in">
+    <a class="mark" href="#main">
+      <img class="mark-img" src="../assets/meatxpert-logo.png" width="1000" height="467" alt="">
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#shop">Shop</a>
+      <a href="#grades">Grades</a>
+      <a href="#bundles">Bundles</a>
+      <a href="#assurance">Halal &amp; delivery</a>
+    </nav>
+
+    <div class="head-act">
+      <form class="search" role="search" data-search>
+        <label class="sr" for="q">Search cuts</label>
+        <input id="q" type="search" placeholder="Search ribeye, shabu, A5&hellip;">
+        <button type="submit" aria-label="Search">Go</button>
+      </form>
+      <button class="cart-btn" data-cart-open aria-haspopup="dialog">
+        Cart <span class="cart-count" data-cart-count>0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="shell hero-in">
+      <div class="hero-copy">
+        <h1 class="hero-h">Steak worth staying home for.</h1>
+        <p class="hero-p">Halal-certified Australian wagyu, Japanese A5 and beef we dry-age ourselves &mdash; broken down to order in Kuala Lumpur and delivered frozen hard.</p>
+
+        <div class="hero-act">
+          <a class="btn btn-solid" href="#shop">Shop all cuts</a>
+          <a class="btn btn-ghost" href="#grades">Which grade should I buy?</a>
+        </div>
+
+        <div class="offer">
+          <p class="offer-h">This week: free 250&nbsp;g wagyu cubes</p>
+          <p class="offer-p">Added automatically to any order over RM&nbsp;600. Ends Sunday, 11pm.</p>
+        </div>
+      </div>
+
+      <div class="case" aria-label="Today's counter">
+        <p class="case-h">On the counter today</p>
+
+        <article class="case-card" data-id="a5-rib" data-name="Kagoshima A5 Ribeye" data-price="289" data-unit="300g">
+          <div class="case-vis" data-vis data-grade="12"></div>
+          <div class="case-txt">
+            <h3>Kagoshima A5 Ribeye</h3>
+            <p>300 g &middot; BMS 11&ndash;12 &middot; Japan</p>
+          </div>
+          <div class="case-buy">
+            <span class="case-pr">RM&nbsp;289</span>
+            <button class="add add-sm" data-add>Add</button>
+          </div>
+        </article>
+
+        <article class="case-card" data-id="mb7-rib" data-name="Australian Wagyu MB7 Ribeye" data-price="168" data-unit="350g">
+          <div class="case-vis" data-vis data-grade="7"></div>
+          <div class="case-txt">
+            <h3>Australian Wagyu MB7 Ribeye</h3>
+            <p>350 g &middot; Halal &middot; Queensland</p>
+          </div>
+          <div class="case-buy">
+            <span class="case-pr">RM&nbsp;168</span>
+            <button class="add add-sm" data-add>Add</button>
+          </div>
+        </article>
+
+        <article class="case-card" data-id="dry-tomahawk" data-name="45-Day Dry-Aged Tomahawk" data-price="395" data-unit="1.2kg">
+          <div class="case-vis" data-vis data-grade="5"></div>
+          <div class="case-txt">
+            <h3>45-Day Dry-Aged Tomahawk</h3>
+            <p>1.2 kg &middot; Feeds three &middot; Aged in-house</p>
+          </div>
+          <div class="case-buy">
+            <span class="case-pr">RM&nbsp;395</span>
+            <button class="add add-sm" data-add>Add</button>
+          </div>
+        </article>
+
+        <p class="case-note">Stock is what we cut this morning. It changes daily.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ USP STRIP ============ -->
+  <section class="usp">
+    <div class="shell usp-in">
+      <div class="usp-item">
+        <h2>Halal certified</h2>
+        <p>Our full Australian range is slaughtered under certification recognised by JAKIM.</p>
+      </div>
+      <div class="usp-item">
+        <h2>Never thawed</h2>
+        <p>Blast frozen at &minus;35&deg;C, shipped in dry ice with a temperature strip in the box.</p>
+      </div>
+      <div class="usp-item">
+        <h2>Cut to order</h2>
+        <p>Whole primals broken down the morning your order leaves, not portioned months ago.</p>
+      </div>
+      <div class="usp-item">
+        <h2>Free over RM&nbsp;350</h2>
+        <p>Same-day in Klang Valley. Next-day air freight everywhere else in Malaysia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SHOP ============ -->
+  <section class="shop" id="shop">
+    <div class="shell">
+      <div class="shop-head">
+        <h2 class="sec-h">Shop by counter</h2>
+        <p class="sec-p">Weights are pre-trim. You are charged the weight we actually cut.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Product categories">
+        <button class="tab is-on" role="tab" aria-selected="true" data-cat="all">Everything</button>
+        <button class="tab" role="tab" aria-selected="false" data-cat="japan">Japanese wagyu</button>
+        <button class="tab" role="tab" aria-selected="false" data-cat="australia">Australian wagyu &middot; halal</button>
+        <button class="tab" role="tab" aria-selected="false" data-cat="aged">Dry-aged</button>
+        <button class="tab" role="tab" aria-selected="false" data-cat="everyday">Everyday cuts</button>
+      </div>
+
+      <div class="grid" data-grid>
+
+        <article class="prod" data-cat="japan" data-id="a5-rib" data-name="Kagoshima A5 Ribeye" data-price="289" data-unit="300g">
+          <div class="prod-vis" data-vis data-grade="12"><span class="flag flag-top">Top grade</span></div>
+          <h3 class="prod-h">Kagoshima A5 Ribeye</h3>
+          <p class="prod-o">Kuroge Washu &middot; BMS 11&ndash;12 &middot; Japan</p>
+          <div class="prod-foot">
+            <div><span class="prod-pr">RM&nbsp;289</span><span class="prod-w">300 g</span></div>
+            <button class="add" data-add>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="prod" data-cat="japan" data-id="a5-strip" data-name="Miyazaki A5 Striploin" data-price="265" data-unit="250g">
+          <div class="prod-vis" data-vis data-grade="12"></div>
+          <h3 class="prod-h">Miyazaki A5 Striploin</h3>
+          <p class="prod-o">Champion prefecture &middot; BMS 10&ndash;12 &middot; Japan</p>
+          <div class="prod-foot">
+            <div><span class="prod-pr">RM&nbsp;265</span><span class="prod-w">250 g</span></div>
+            <button class="add" data-add>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="prod" data-cat="japan" data-id="snow-tender" data-name="Hokkaido Snow Beef A5 Tenderloin" data-price="420" data-unit="200g">
+          <div class="prod-vis" data-vis data-grade="12"><span class="flag flag-rare">Two left</span></div>
+          <h3 class="prod-h">Hokkaido Snow Beef A5 Tenderloin</h3>
+          <p class="prod-o">Kamishihoro &middot; about 200 head a year &middot; Japan</p>
+          <div class="prod-foot">
+            <div><span class="prod-pr">RM&nbsp;420</span><span class="prod-w">200 g</span></div>
+            <button class="add" data-add>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="prod" data-cat="japan" data-id="karubi" data-name="A4 Wagyu Karubi Yakiniku Set" data-price="215" data-unit="400g">
+          <div class="prod-vis" data-vis data-grade="9"></div>
+          <h3 class="prod-h">A4 Wagyu Karubi Yakiniku Set</h3>
+          <p class="prod-o">Short rib, cut across the grain &middot; serves four</p>
+          <div class="prod-foot">
+            <div><span class="prod-pr">RM&nbsp;215</span><span class="prod-w">400 g</span></div>
+            <button class="add" data-add>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="prod" data-cat="australia" data-id="mb7-rib" data-name="Australian Wagyu MB7 Ribeye" data-price="168" data-unit="350g">
+          <div class="prod-vis" data-vis data-grade="7"><span class="flag flag-halal">Halal</span></div>
+          <h3 class="prod-h">Australian Wagyu MB7 Ribeye</h3>
+          <p class="prod-o">Darling Downs &middot; 400-day grain fed &middot; Queensland</p>
+          <div class="prod-foot">
+            <div><span class="prod-pr">RM&nbsp;168</span><span class="prod-w">350 g</span></div>
+            <button class="add" data-add>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="prod" data-cat="australia" data-id="shabu" data-name="Wagyu Chuck Roll Shabu Slices MB5" data-price="138" data-unit="500g">
+          <div class="prod-vis" data-vis data-grade="5"><span class="flag flag-halal">Halal</span></div>
+          <h3 class="prod-h">Wagyu Chuck Roll, Shabu Slices MB5</h3>
+          <p class="prod-o">Sliced 1.5 mm &middot; interleaved &middot; steamboat ready</p>
+          <div class="prod-foot">
+            <div><span class="prod-pr">RM&nbsp;138</span><span class="prod-w">500 g</span></div>
+            <button class="add" data-add>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="prod" data-cat="australia" data-id="cubes" data-name="Wagyu Beef Cubes MB6" data-price="145" data-unit="500g">
+          <div class="prod-vis" data-vis data-grade="7"><span class="flag flag-halal">Halal</span></div>
+          <h3 class="prod-h">Wagyu Beef Cubes MB6</h3>
+          <p class="prod-o">Cut 25 mm from the rump &middot; rendang and stews</p>
+          <div class="prod-foot">
+            <div><span class="prod-pr">RM&nbsp;145</span><span class="prod-w">500 g</span></div>
+            <button class="add" data-add>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="prod" data-cat="australia" data-id="patties" data-name="Wagyu Burger Patties MB6" data-price="96" data-unit="4 x 150g">
+          <div class="prod-vis" data-vis data-grade="7"><span class="flag flag-halal">Halal</span></div>
+          <h3 class="prod-h">Wagyu Burger Patties MB6</h3>
+          <p class="prod-o">Brisket and chuck trim &middot; 22% fat &middot; four per pack</p>
+          <div class="prod-foot">
+            <div><span class="prod-pr">RM&nbsp;96</span><span class="prod-w">4 &times; 150 g</span></div>
+            <button class="add" data-add>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="prod" data-cat="aged" data-id="dry-tomahawk" data-name="45-Day Dry-Aged Tomahawk" data-price="395" data-unit="1.2kg">
+          <div class="prod-vis" data-vis data-grade="5"><span class="flag flag-top">Aged in-house</span></div>
+          <h3 class="prod-h">45-Day Dry-Aged Tomahawk</h3>
+          <p class="prod-o">Grass-fed Angus &middot; hazelnut crust &middot; feeds three</p>
+          <div class="prod-foot">
+            <div><span class="prod-pr">RM&nbsp;395</span><span class="prod-w">1.2 kg</span></div>
+            <button class="add" data-add>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="prod" data-cat="aged" data-id="dry-rib" data-name="28-Day Dry-Aged Angus Ribeye" data-price="132" data-unit="300g">
+          <div class="prod-vis" data-vis data-grade="5"></div>
+          <h3 class="prod-h">28-Day Dry-Aged Angus Ribeye</h3>
+          <p class="prod-o">A gentler age &middot; nutty without the funk</p>
+          <div class="prod-foot">
+            <div><span class="prod-pr">RM&nbsp;132</span><span class="prod-w">300 g</span></div>
+            <button class="add" data-add>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="prod" data-cat="everyday" data-id="nz-rib" data-name="New Zealand Grass-Fed Ribeye" data-price="78" data-unit="300g">
+          <div class="prod-vis" data-vis data-grade="5"><span class="flag flag-halal">Halal</span></div>
+          <h3 class="prod-h">New Zealand Grass-Fed Ribeye</h3>
+          <p class="prod-o">Canterbury &middot; pasture raised &middot; the weeknight steak</p>
+          <div class="prod-foot">
+            <div><span class="prod-pr">RM&nbsp;78</span><span class="prod-w">300 g</span></div>
+            <button class="add" data-add>Add to cart</button>
+          </div>
+        </article>
+
+        <article class="prod" data-cat="everyday" data-id="short-ribs" data-name="Beef Short Ribs, Bone In" data-price="88" data-unit="700g">
+          <div class="prod-vis" data-vis data-grade="5"><span class="flag flag-halal">Halal</span></div>
+          <h3 class="prod-h">Beef Short Ribs, Bone In</h3>
+          <p class="prod-o">Cut English style &middot; four hours low and slow</p>
+          <div class="prod-foot">
+            <div><span class="prod-pr">RM&nbsp;88</span><span class="prod-w">700 g</span></div>
+            <button class="add" data-add>Add to cart</button>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="grid-empty" data-grid-empty hidden>Nothing matches that. Try another counter.</p>
+    </div>
+  </section>
+
+  <!-- ============ GRADES ============ -->
+  <section class="grades" id="grades">
+    <div class="shell">
+      <div class="shop-head">
+        <h2 class="sec-h">How much marbling do you actually want?</h2>
+        <p class="sec-p">Fat content is the whole price difference. More is not automatically better &mdash; it depends on how much you plan to eat in one sitting.</p>
+      </div>
+
+      <div class="grade-row">
+        <article class="grade">
+          <div class="grade-vis" data-vis data-grade="5" data-square></div>
+          <h3>MB5 &middot; grass-fed</h3>
+          <p>Lean and beefy. Cook it like any good steak and serve 250&ndash;350&nbsp;g a head.</p>
+          <p class="grade-from">From RM&nbsp;78</p>
+        </article>
+        <article class="grade">
+          <div class="grade-vis" data-vis data-grade="7" data-square></div>
+          <h3>MB7 &middot; Australian wagyu</h3>
+          <p>Bastes itself in the pan. Rich but still a full portion. Our most repeated order.</p>
+          <p class="grade-from">From RM&nbsp;138</p>
+        </article>
+        <article class="grade">
+          <div class="grade-vis" data-vis data-grade="9" data-square></div>
+          <h3>A4 &middot; BMS 8&ndash;10</h3>
+          <p>Fat melts near body temperature. Best thin, over charcoal, shared at the table.</p>
+          <p class="grade-from">From RM&nbsp;215</p>
+        </article>
+        <article class="grade">
+          <div class="grade-vis" data-vis data-grade="12" data-square></div>
+          <h3>A5 &middot; BMS 11&ndash;12</h3>
+          <p>The top of the Japanese scale. Portion 100&ndash;150&nbsp;g a head or it defeats you.</p>
+          <p class="grade-from">From RM&nbsp;265</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUNDLES ============ -->
+  <section class="bundles" id="bundles">
+    <div class="shell bundle-row">
+      <article class="bundle bundle-lead" data-id="bbq-box" data-name="Backyard BBQ Box" data-price="465" data-unit="2.6kg total">
+        <h2>Backyard BBQ Box</h2>
+        <p>MB7 ribeye, short ribs, four wagyu patties and a kilo of sausages. Enough for eight people and a long afternoon.</p>
+        <p class="bundle-pr">RM&nbsp;465 <span>usually RM&nbsp;538</span></p>
+        <button class="btn btn-solid" data-add>Add the box</button>
+      </article>
+
+      <article class="bundle bundle-alt" data-id="yakiniku-box" data-name="Yakiniku Night for Four" data-price="398" data-unit="1.2kg total">
+        <h2>Yakiniku Night for Four</h2>
+        <p>A4 karubi, MB6 cubes, shabu slices and a jar of our tare. Table grill not included, sadly.</p>
+        <p class="bundle-pr">RM&nbsp;398 <span>usually RM&nbsp;452</span></p>
+        <button class="btn btn-line" data-add>Add the box</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="reviews">
+    <div class="shell">
+      <div class="shop-head">
+        <h2 class="sec-h">What people say after the first box</h2>
+      </div>
+      <div class="rev-row">
+        <figure class="rev">
+          <blockquote><p>Arrived rock solid with dry ice still in the liner at 4pm. The MB7 ribeye was better than the one I paid triple for in Bukit Bintang.</p></blockquote>
+          <figcaption>Nurul A. &mdash; Petaling Jaya</figcaption>
+        </figure>
+        <figure class="rev">
+          <blockquote><p>I asked for the short ribs cut thicker and they just did it. No fuss, no surcharge, note in the box explaining the weight.</p></blockquote>
+          <figcaption>Kevin T. &mdash; Mont Kiara</figcaption>
+        </figure>
+        <figure class="rev">
+          <blockquote><p>The halal certificate was in the box with the batch number. That is the reason my family orders from here and nowhere else.</p></blockquote>
+          <figcaption>Faizal R. &mdash; Shah Alam</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ASSURANCE ============ -->
+  <section class="assure" id="assurance">
+    <div class="shell assure-in">
+      <div class="assure-lead">
+        <h2 class="assure-h">Halal handling, kept separate end to end</h2>
+        <p>Our Australian and New Zealand range is slaughtered under certification recognised by JAKIM. It is stored in its own chiller, cut on its own bench with its own knives, and packed by a separate team. The Japanese range is not halal and never shares a surface with it. Every halal order ships with its certificate and batch number.</p>
+      </div>
+      <dl class="assure-facts">
+        <div><dt>Storage</dt><dd>&minus;18&deg;C, separate chiller</dd></div>
+        <div><dt>Certificate</dt><dd>In every halal box</dd></div>
+        <div><dt>Traceability</dt><dd>Batch number per cut</dd></div>
+        <div><dt>Audit</dt><dd>Twice yearly, third party</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="sign">
+    <div class="shell sign-in">
+      <div>
+        <h2 class="sign-h">RM 30 off your first box</h2>
+        <p class="sign-p">Join the Thursday list for what landed that week, and we will send a code for RM&nbsp;30 off any order over RM&nbsp;250.</p>
+      </div>
+      <form class="sign-form" data-signup>
+        <label class="sr" for="email-b">Email address</label>
+        <input id="email-b" type="email" name="email" placeholder="you@example.com" required>
+        <button class="btn btn-solid" type="submit">Send my code</button>
+        <p class="sign-msg" data-signup-msg role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="shell foot-in">
+    <div class="foot-brand">
+      <img class="foot-logo" src="../assets/meatxpert-logo.png" width="1000" height="467"
+           alt="MEATXPERT — Malaysian butcher. Premium Cut, Premium Meat.">
+      <p>Malaysian butcher. Whole-primal butchery and premium beef import.<br>14 Jalan Kia Peng, 50450 Kuala Lumpur.</p>
+      <p class="foot-tel"><a href="tel:+60312345678">+60 3 1234 5678</a><br><a href="mailto:hello@meatxpert.my">hello@meatxpert.my</a></p>
+    </div>
+    <nav class="foot-col" aria-label="Shop">
+      <h3>Shop</h3>
+      <a href="#shop">Japanese wagyu</a>
+      <a href="#shop">Australian wagyu</a>
+      <a href="#shop">Dry-aged</a>
+      <a href="#bundles">Bundles</a>
+    </nav>
+    <nav class="foot-col" aria-label="Help">
+      <h3>Help</h3>
+      <a href="#assurance">Halal handling</a>
+      <a href="#assurance">Delivery &amp; packaging</a>
+      <a href="#grades">Grading guide</a>
+      <a href="#shop">Returns</a>
+    </nav>
+    <nav class="foot-col" aria-label="Company">
+      <h3>Company</h3>
+      <a href="#main">About us</a>
+      <a href="#shop">Wholesale</a>
+      <a href="#main">Careers</a>
+      <a href="#main">Terms &amp; privacy</a>
+    </nav>
+  </div>
+  <div class="shell foot-base">
+    <p>&copy; 2026 MEATXPERT Sdn Bhd (1234567-A)</p>
+    <p>Prices in Malaysian Ringgit, inclusive of SST.</p>
+  </div>
+</footer>
+
+<!-- ============ CART ============ -->
+<div class="scrim" data-cart-scrim hidden></div>
+<aside class="cart" data-cart role="dialog" aria-modal="true" aria-label="Your cart" hidden>
+  <header class="cart-head">
+    <h2>Your cart</h2>
+    <button class="cart-x" data-cart-close aria-label="Close cart">&times;</button>
+  </header>
+  <div class="cart-ship">
+    <div class="cart-bar"><span data-cart-bar></span></div>
+    <p data-cart-ship>Free delivery on orders over RM 350.</p>
+  </div>
+  <div class="cart-body" data-cart-body></div>
+  <footer class="cart-foot">
+    <div class="cart-sum">
+      <span>Subtotal</span>
+      <strong data-cart-total>RM 0.00</strong>
+    </div>
+    <button class="btn btn-solid btn-full" data-checkout>Go to checkout</button>
+    <p class="cart-fine">Delivery and any dry-ice surcharge are calculated at checkout.</p>
+  </footer>
+</aside>
+
+<script src="app.js"></script>
+</body>
+</html>

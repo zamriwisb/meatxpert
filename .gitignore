@@ -1,0 +1,12 @@
+# The client's raw files stay local: too large for GitHub (450 MB+) and they
+# include private company documents. The site uses the processed copies in assets/.
+WEBSITE RAW FILES/
+*.zip
+
+# Build output and local tooling
+tools/cutout
+.playwright-mcp/
+.check*/
+
+# OS
+.DS_Store
